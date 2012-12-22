@@ -440,7 +440,7 @@ gives unlimited permission to copy, distribute and modify it."
 ac_pwd='/home/jiakai/programming/projects/injuslin/injuslin'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
-MKDIR_P='/bin/mkdir -p'
+MKDIR_P='/usr/bin/mkdir -p'
 AWK='gawk'
 test -n "$AWK" || AWK=awk
 # The default lists apply if the user does not specify any file.
@@ -636,7 +636,8 @@ S["CPP"]="gcc -E"
 S["GTK_LIBS"]="-lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfreetype -lfontconfig -lgobje"\
 "ct-2.0 -lglib-2.0  "
 S["GTK_CFLAGS"]="-pthread -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/"\
-"pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng15  "
+"pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng15 -I/usr/includ"\
+"e/harfbuzz  "
 S["PKG_CONFIG"]="/usr/bin/pkg-config"
 S["am__fastdepCXX_FALSE"]="#"
 S["am__fastdepCXX_TRUE"]=""
@@ -743,8 +744,8 @@ S["AMTAR"]="$${TAR-tar}"
 S["am__leading_dot"]="."
 S["SET_MAKE"]=""
 S["AWK"]="gawk"
-S["mkdir_p"]="/bin/mkdir -p"
-S["MKDIR_P"]="/bin/mkdir -p"
+S["mkdir_p"]="/usr/bin/mkdir -p"
+S["MKDIR_P"]="/usr/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]=""
 S["install_sh"]="${SHELL} /home/jiakai/programming/projects/injuslin/injuslin/install-sh"

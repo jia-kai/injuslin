@@ -1,7 +1,7 @@
 /*
  * $File: start_judge.cpp
  * $Author: Jiakai <jia.kai66@gmail.com>
- * $Date: Wed Jul 06 11:01:49 2011 +0800
+ * $Date: Sat Dec 22 11:15:57 2012 +0800
  */
 /*
 Copyright (C) (2008, 2009) (jiakai) <jia.kai66@gmail.com>
@@ -66,8 +66,10 @@ static void get_problems(Iter_Problem_config_array &result, const Contest_config
 static void* thread_watch_stop(void *data);
 static double cb_fc_verifier(double fullscore, const char *std_input_path,
 		const char *std_output_path, const char *user_output_path, void *data);
-static bool cb_judge_core(Judge_core_cb_info info, int addition_info, void *data);
-static bool cb_judge_core_quiet(Judge_core_cb_info info, int addition_info, void *data);
+static bool cb_judge_core(Judge_core_cb_info info,
+		size_t addition_info, void *data);
+static bool cb_judge_core_quiet(Judge_core_cb_info info, size_t addition_info,
+		void *data);
 //----------------------------------------------------------------------------
 
 void start_judge(const char *conf_path)
@@ -351,7 +353,7 @@ void start_judge_quiet(const char *conf_path, const char *ct, const char *pr)
 	}
 }
 
-bool cb_judge_core(Judge_core_cb_info info, int addition_info, void *data0)
+bool cb_judge_core(Judge_core_cb_info info, size_t addition_info, void *data0)
 {
 	Shared_data *data = static_cast<Shared_data*>(data0);
 	if (data->stop_flag)
@@ -540,7 +542,7 @@ void get_problems(Iter_Problem_config_array &result, const Contest_config &ct_co
 	delete []names;
 }
 
-bool cb_judge_core_quiet(Judge_core_cb_info info, int addition_info, void *data0)
+bool cb_judge_core_quiet(Judge_core_cb_info info, size_t addition_info, void *data0)
 {
 	Shared_data *data = static_cast<Shared_data*>(data0);
 	return data->stop_flag;

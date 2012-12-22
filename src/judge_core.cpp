@@ -1,7 +1,7 @@
 /*
  * $File: judge_core.cpp
  * $Author: Jiakai <jia.kai66@gmail.com>
- * $Date: Wed Jul 06 11:15:28 2011 +0800
+ * $Date: Sat Dec 22 11:14:19 2012 +0800
  */
 /*
 Copyright (C) (2008, 2009) (jiakai) <jia.kai66@gmail.com>
@@ -117,7 +117,7 @@ bool judge_core(const Contest_config &ct_conf, const Problem_config &prob_conf, 
 		{
 			result.source_found = true;
 
-			CB_PROGRESS(JUDGE_CORE_CB_SRC_FOUND, (int)src_file_path.c_str());
+			CB_PROGRESS(JUDGE_CORE_CB_SRC_FOUND, (size_t)src_file_path.c_str());
 
 			string tmp(TEMP_DIRECTORY);
 			tmp.append(PROG_NAME);

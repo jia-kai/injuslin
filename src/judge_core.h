@@ -1,7 +1,7 @@
 /*
  * $File: judge_core.h
  * $Author: Jiakai <jia.kai66@gmail.com>
- * $Date: Sun Sep 20 11:50:05 2009
+ * $Date: Sat Dec 22 11:14:06 2012 +0800
  */
 /*
 Copyright (C) (2008, 2009) (jiakai) <jia.kai66@gmail.com>
@@ -27,6 +27,7 @@ Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 #include "conf.h"
 #include "structures.h"
+#include <stdint.h>
 
 typedef double (*File_compare)(double fullmark, const char *std_input_path, 
 		const char *std_output_path, const char *user_output_path, void *user_data);
@@ -48,7 +49,7 @@ enum Judge_core_cb_info
 		//     JUDGE_CORE_CB_START_CHECK and JUDGE_CORE_CB_FINISH_ALL:
 		//     @addition_info will be the number of test point being judged, starting at 0
 };
-typedef bool (*Judge_core_cb)(Judge_core_cb_info info, int addition_info, void *user_data); 
+typedef bool (*Judge_core_cb)(Judge_core_cb_info info, size_t addition_info, void *user_data); 
 	// return true to stop the judge process
 
 // Func:  judge_core  --  judge a contestant's solution for a problem
