@@ -1,0 +1,937 @@
+# Chinese translations for injuslin package
+# injuslin 软件包的简体中文翻译.
+# Copyright (C) 2009 Jiakai
+# This file is distributed under the same license as the injuslin package.
+#  <jia.kai66@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: injuslin 1.0-alpha\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-16 19:43+0800\n"
+"PO-Revision-Date: 2009-08-26 11:18+0800\n"
+"Last-Translator:  <jia.kai66@gmail.com>\n"
+"Language-Team: Chinese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/auto_add_points.cpp:146
+#, c-format
+msgid "%s : %s : %d:  chdir(\"%s\"): %s\n"
+msgstr "%s : %s : %d:  chdir(\"%s\"): %s\n"
+
+#: ../src/auto_add_points.cpp:154
+#, c-format
+msgid "%s : %s : %d:  opendir: %s\n"
+msgstr "%s : %s : %d:  opendir: %s\n"
+
+#: ../src/auto_add_points.cpp:166
+#, c-format
+msgid "%s : %s : %d:  stat: %s\n"
+msgstr "%s : %s : %d:  stat: %s\n"
+
+#: ../src/auto_add_points.cpp:179
+#, c-format
+msgid "%s : %s : %d:  fchdir: %s\n"
+msgstr "%s : %s : %d:  fchdir: %s\n"
+
+#. return NULL if @str is empty
+#. ----------------------------------------------------------------------------
+#: ../src/main.cpp:65
+#, c-format
+msgid "(At %s : %s : %d)\n"
+msgstr "(位于 %s : %s : %d)\n"
+
+#: ../src/main.cpp:116
+msgid "Unrecognizable format of argument of option -q"
+msgstr "无法识别选项-q的参数格式"
+
+#: ../src/main.cpp:117 ../src/main.cpp:146
+msgid "Try -h option for more information."
+msgstr "尝试使用-h选项以获取更多信息。"
+
+#: ../src/main.cpp:132
+#, c-format
+msgid ""
+"%s\n"
+"Written by %s. \n"
+msgstr ""
+"%s\n"
+"由 %s 编写。\n"
+
+#: ../src/main.cpp:145
+msgid "Option -f not found."
+msgstr "缺少选项-f。"
+
+#: ../src/main.cpp:170
+msgid "Please select the configuration file"
+msgstr "请选择配置文件"
+
+#: ../src/main.cpp:183
+#, c-format
+msgid ""
+"Usage: %s [options]\n"
+"INformatics JUdge System for LINux\n"
+"\n"
+"Options are:\n"
+msgstr ""
+"用法：%s [options]\n"
+"Linux下的信息学评测系统\n"
+"\n"
+"选项：\n"
+
+#: ../src/main.cpp:184
+msgid ""
+"-f, --file=file      Designate the configuration file. \n"
+"                     By default, a dialog will pop up to \n"
+"                     ask the user to select a file.\n"
+msgstr ""
+"-f, --file=file      指定配置文件。 \n"
+"                     缺省则弹出对话框要求用户选择文件。\n"
+
+#: ../src/main.cpp:188
+msgid ""
+"-j, --judge          Run in judge mode. \n"
+"                     Option -f required.\n"
+msgstr ""
+"-j, --judge          以评测模式运行。 \n"
+"                     需要-f选项。\n"
+
+#: ../src/main.cpp:191
+msgid ""
+"-q, --quiet[=ct:pr]  Run in quiet judge mode, \n"
+"                     meaning start judge process directly, \n"
+"                     without printing to standand output. \n"
+"                     If ct and pr are given, judge the \n"
+"                     contentant ct and problem pr. \n"
+"                     If either ct or pr is empty, \n"
+"                     it means all. (e.g. -q:test means \n"
+"                     judge the problem 'test' for all contestants.)\n"
+"                     Option -f required.\n"
+msgstr ""
+"-q, --quiet[=ct:pr]  以静默评测模式运行，即直接\n"
+"                     评测而不输出信息至标准输出。\n"
+"                     如果指定ct和pr，则评测ct选手的\n"
+"                     pr题目。如果ct和pr之一为空，\n"
+"                     意为所有。（如-q:test意为评测所有选手的\n"
+"                     test试题。）\n"
+"                     需要-f选项。\n"
+
+#: ../src/main.cpp:201
+msgid ""
+"-r, --report=file    Output the judge results \n"
+"                     in HTML format to the file. \n"
+"                     Option -f required.\n"
+msgstr ""
+"-r, --report=file    以HTML格式输出评测结果至文件file。\n"
+"                     需要-f选项。\n"
+
+#: ../src/main.cpp:205
+msgid ""
+"-R, --result[=ct]    Print the judge results \n"
+"                     to standand output. \n"
+"                     If ct is given, only print the \n"
+"                     results of contentant ct. \n"
+"                     Option -f required.\n"
+msgstr ""
+"-R, --result[=ct]    输出评测结果至标准输出。\n"
+"                     如果指定ct，仅输出选手ct的评测结果。\n"
+"                     需要-f选项。\n"
+
+#: ../src/main.cpp:211
+msgid "-h, --help           Display this help and exit.\n"
+msgstr "-h, --help           显示此帮助信息并退出。\n"
+
+#: ../src/main.cpp:213
+msgid "-v, --version        Output version information and exit.\n"
+msgstr "-v, --version        显示版本信息并退出。\n"
+
+#: ../src/main.cpp:215
+#, c-format
+msgid "Please report bugs to <%s>\n"
+msgstr "请向 <%s> 报告程序错误。\n"
+
+#: ../src/main.cpp:229
+msgid "Configure the contest"
+msgstr "配置比赛"
+
+#: ../src/main.cpp:234
+msgid "Start judge"
+msgstr "开始评测"
+
+#: ../src/main.cpp:239
+msgid "View the judge results"
+msgstr "查看评测结果"
+
+#: ../src/main.cpp:285
+msgid ""
+"Judge in graphics mode is currently not supported. \n"
+"Please view injuslin's manual page or run 'injuslin -h' from console for "
+"more information. "
+msgstr ""
+"尚不支持图形模式下的评测。\n"
+"请在查看injuslin的手册或控制台下运行“injuslin -h”以获取更多信息。"
+
+#: ../src/configure_contest.cpp:143
+#, c-format
+msgid ""
+"%s\n"
+"Details:\n"
+"%s"
+msgstr ""
+"%s\n"
+"详细信息：\n"
+"%s"
+
+#: ../src/configure_contest.cpp:144 ../src/view_results.cpp:409
+msgid ""
+"Error while initializing the contest configuration.\n"
+"Maybe the configuration file is broken."
+msgstr "初始化比赛配置失败。配置文件可能已损坏。"
+
+#: ../src/configure_contest.cpp:147 ../src/gtk_addition.cpp:85
+msgid "Error"
+msgstr "错误"
+
+#: ../src/configure_contest.cpp:205
+msgid "NONE"
+msgstr "无"
+
+#. Initialize the buttons.
+#: ../src/configure_contest.cpp:218
+msgid "General _Options"
+msgstr "常规选项 (_O)"
+
+#: ../src/configure_contest.cpp:223
+msgid "Auto. _Configure"
+msgstr "自动配置 (_C)"
+
+#: ../src/configure_contest.cpp:228
+msgid "_Add Problem"
+msgstr "添加试题 (_A)"
+
+#: ../src/configure_contest.cpp:236 ../src/configure_contest.cpp:728
+#: ../src/configure_contest.cpp:736
+msgid "_Delete Problem"
+msgstr "删除试题 (_D)"
+
+#: ../src/configure_contest.cpp:243
+msgid "Add _Test Points"
+msgstr "添加测试点 (_T)"
+
+#: ../src/configure_contest.cpp:250
+msgid "Auto. Add Test _Points"
+msgstr "自动添加测试点 (_P)"
+
+#: ../src/configure_contest.cpp:284
+msgid ""
+"Failed to save the configuration file.\n"
+"Please choose another path, or all the changes will be lost.\n"
+"Would you like to choose another file path?"
+msgstr ""
+"保存配置文件失败。请重新选择路径，否则更改将丢失。\n"
+"是否重新选择文件路径？"
+
+#: ../src/configure_contest.cpp:289
+msgid "Please select another configuration file"
+msgstr "请选择另一个配置文件"
+
+#: ../src/configure_contest.cpp:309
+#, c-format
+msgid ""
+"More than one problem use the same name '%s'.\n"
+"Please change their names, so they are different from each other."
+msgstr ""
+"不止一个题目使用了相同的名称“%s”。\n"
+"请更改冲突的题目名称。"
+
+#: ../src/configure_contest.cpp:340
+#, c-format
+msgid ""
+"Failed to list the directory.\n"
+"Details:\n"
+"%s"
+msgstr ""
+"读取目录失败。\n"
+"详细信息：\n"
+"%s"
+
+#: ../src/configure_contest.cpp:356
+#, c-format
+msgid "Directory '%s' is found. Assume in it is a problem configuration."
+msgstr "找到了目录 “%s”。现假设其中包含题目配置。"
+
+#: ../src/configure_contest.cpp:375
+msgid "Please enter the time limit[s] for every point:"
+msgstr "请输入每个测试点的时间限制[秒]："
+
+#: ../src/configure_contest.cpp:381
+msgid "Please enter the score for every point:"
+msgstr "请输入每个测试点的分数："
+
+#: ../src/configure_contest.cpp:385
+msgid "Please enter the rlimit_as for every point:"
+msgstr "请输入每个测试点的rlimit_as："
+
+#: ../src/configure_contest.cpp:389
+msgid "Please enter the rlimit_data for every point:"
+msgstr "请输入每个测试点的rlimit_data："
+
+#: ../src/configure_contest.cpp:393
+msgid "Please enter the rlimit_stack for every point:"
+msgstr "请输入每个测试点的rlimit_stack："
+
+#: ../src/configure_contest.cpp:420
+#, c-format
+msgid ""
+"Failed to automatically add test points.\n"
+"You should put the input and output files in the directory '%s/%s'.\n"
+"And there should not be any extra files."
+msgstr ""
+"自动添加测试点失败。\n"
+"所有输入输出文件应该位于“%s/%s”目录中，并且不应该有多余文件。"
+
+#: ../src/configure_contest.cpp:460
+msgid "Please enter the pattern for standard input files:"
+msgstr "请输入标准输入文件名的模式："
+
+#: ../src/configure_contest.cpp:465
+msgid "Please enter the pattern for standard output files:"
+msgstr "请输入标准输出文件名的模式："
+
+#: ../src/configure_contest.cpp:471
+#, c-format
+msgid ""
+"Please enter the values that are separated by a space to replace the '%%' "
+"mark:"
+msgstr "请输入用以替换“%%”符号的值，以空格分隔："
+
+#: ../src/configure_contest.cpp:516
+#, c-format
+msgid "Are you sure to delete the problem '%s'?"
+msgstr "您确定要删除“%s”试题吗？"
+
+#: ../src/configure_contest.cpp:540
+msgid "Please enter the problem name"
+msgstr "请输入试题名称"
+
+#: ../src/configure_contest.cpp:547
+msgid "This name already exists."
+msgstr "该名称已存在。"
+
+#: ../src/configure_contest.cpp:557
+msgid "Problem Information"
+msgstr "试题信息"
+
+#: ../src/configure_contest.cpp:573
+msgid "Problem Name:"
+msgstr "试题名称："
+
+#: ../src/configure_contest.cpp:574
+msgid "Source File Name:"
+msgstr "源文件名："
+
+#: ../src/configure_contest.cpp:575 ../src/configure_contest.cpp:634
+msgid "Input File Name:"
+msgstr "输入文件名："
+
+#: ../src/configure_contest.cpp:576 ../src/configure_contest.cpp:635
+msgid "Output File Name:"
+msgstr "输出文件名："
+
+#: ../src/configure_contest.cpp:581
+msgid "Standard Verifier"
+msgstr "标准校验器"
+
+#: ../src/configure_contest.cpp:584
+msgid "Customized Verifier"
+msgstr "自定义校验器"
+
+#: ../src/configure_contest.cpp:589
+msgid ""
+"For more information about the configuration, please refer to injuslin's "
+"manual page."
+msgstr "更多关于比赛配置的信息，请参考injuslin的手册。"
+
+#: ../src/configure_contest.cpp:618
+msgid "Test Point Information"
+msgstr "测试点信息"
+
+#: ../src/configure_contest.cpp:636
+msgid "Score:"
+msgstr "分数："
+
+#: ../src/configure_contest.cpp:641
+msgid "Time Limit[s]:"
+msgstr "时限(秒)："
+
+#: ../src/configure_contest.cpp:652
+msgid "Resource Limit (-1 means unlimited)"
+msgstr "资源限制 （-1为不限制）"
+
+#: ../src/configure_contest.cpp:658
+msgid "rlimit_as:"
+msgstr "limit_as："
+
+#: ../src/configure_contest.cpp:659
+msgid "rlimit_data:"
+msgstr "rlimit_data："
+
+#: ../src/configure_contest.cpp:660
+msgid "rlimit_stack:"
+msgstr "rlimit_stack："
+
+#: ../src/configure_contest.cpp:684
+msgid "Problems"
+msgstr "试题"
+
+#: ../src/configure_contest.cpp:724
+msgid "_Delete Test Point"
+msgstr "删除测试点 (_D)"
+
+#: ../src/configure_contest.cpp:942
+msgid "General Options"
+msgstr "常规选项"
+
+#: ../src/configure_contest.cpp:968
+msgid "Contest Name:"
+msgstr "比赛名称："
+
+#: ../src/configure_contest.cpp:970
+msgid "Source file directory:"
+msgstr "源文件目录："
+
+#: ../src/configure_contest.cpp:972
+msgid "Compiler Options"
+msgstr "编译选项"
+
+#: ../src/configure_contest.cpp:985
+msgid "File Extension"
+msgstr "文件扩展名"
+
+#: ../src/configure_contest.cpp:988
+msgid "Compiler Command"
+msgstr "编译命令"
+
+#: ../src/configure_contest.cpp:1006
+msgid "_Add"
+msgstr "添加 (_A)"
+
+#: ../src/configure_contest.cpp:1011
+msgid "_Remove"
+msgstr "移除 (_R)"
+
+#: ../src/configure_contest.cpp:1026
+msgid "Please enter the file extension"
+msgstr "请输入文件扩展名"
+
+#: ../src/configure_contest.cpp:1029
+msgid "Sorry, you entered an empty string."
+msgstr "对不起，您输入了一个空字符串。"
+
+#: ../src/configure_contest.cpp:1046
+msgid "Cannot remove the last item."
+msgstr "无法移除最后一项。"
+
+#: ../src/configure_contest.cpp:1051
+msgid "No item is selected."
+msgstr "未选择项目。"
+
+#: ../src/gtk_addition.cpp:56
+msgid "Input"
+msgstr "输入"
+
+#: ../src/gtk_addition.cpp:96
+msgid "Warning"
+msgstr "警告"
+
+#: ../src/gtk_addition.cpp:107
+msgid "Confirm"
+msgstr "确认"
+
+#: ../src/gtk_addition.cpp:119
+msgid "Message"
+msgstr "信息"
+
+#: ../src/structures.cpp:40
+#, c-format
+msgid "Invalid version of the configuration file."
+msgstr "配置文件版本无效。"
+
+#: ../src/structures.cpp:53
+#, c-format
+msgid ""
+"Unable to fetch the 'compiler.command' section.\n"
+"(At %s : %s : %d)"
+msgstr ""
+"无法读取 “compiler.command” 区域。\n"
+"(位于 %s : %s : %d)"
+
+#: ../src/structures.cpp:60 ../src/structures.cpp:104
+#, c-format
+msgid ""
+"Unable to fetch source file directory.\n"
+"(At %s : %s : %d)"
+msgstr ""
+"无法读取源文件目录路径。\n"
+"(位于 %s : %s : %d)"
+
+#: ../src/structures.cpp:69 ../src/structures.cpp:113
+#, c-format
+msgid ""
+"Unable to fetch contest name.\n"
+"(At %s : %s : %d)"
+msgstr ""
+"无法取得比赛名称。\n"
+"(位于 %s : %s : %d)"
+
+#: ../src/structures.cpp:77 ../src/structures.cpp:121
+#, c-format
+msgid ""
+"Unable to fetch number of problems.\n"
+"(At %s : %s : %d)"
+msgstr ""
+"无法取得试题数量。\n"
+"(位于 %s : %s : %d)"
+
+#: ../src/structures.cpp:97
+#, c-format
+msgid ""
+"Unable to fetch the 'compiler' section.\n"
+"(At %s : %s : %d)"
+msgstr ""
+"无法读取 “compiler” 区域。\n"
+"(位于 %s : %s : %d)"
+
+#: ../src/structures.cpp:150
+#, c-format
+msgid ""
+"Unable to fetch the name of problem #%d.\n"
+"(At %s : %s : %d)"
+msgstr ""
+"无法取得试题 #%d 的名称。\n"
+"(位于 %s : %s : %d)"
+
+#: ../src/structures.cpp:158 ../src/structures.cpp:189
+#, c-format
+msgid ""
+"Unable to fetch the '%s' field of problem #%d.\n"
+"(At %s : %s : %d)"
+msgstr ""
+"试取 “%s” 区域于试题 #%d 失败。\n"
+"(位于 %s : %s : %d)"
+
+#: ../src/structures.cpp:170 ../src/structures.cpp:208
+#, c-format
+msgid ""
+"Unable to fetch the number of points of problem #%d.\n"
+"(At %s : %s : %d)"
+msgstr ""
+"无法取得试题 #%d 的测试点数量。\n"
+"(位于 %s : %s : %d)"
+
+#: ../src/structures.cpp:201
+#, c-format
+msgid ""
+"Invalid verifier '%s' of problem #%d.\n"
+"(At %s : %s : %d)"
+msgstr ""
+"无效校验器 '%s' 于试题 #%d 。\n"
+"(位于 %s : %s : %d)"
+
+#: ../src/structures.cpp:224
+#, c-format
+msgid ""
+"Unable to fetch the '%s' item in section '%s'.\n"
+"(At %s : %s : %d)"
+msgstr ""
+"无法读取 “%s” 区域中的 “%s” 项目。\n"
+"(位于 %s : %s : %d)"
+
+#: ../src/view_results.cpp:177
+msgid "_Export as HTML"
+msgstr "导出为HTML (_E)"
+
+#: ../src/view_results.cpp:217
+msgid "Normal"
+msgstr "正常"
+
+#: ../src/view_results.cpp:218
+msgid "Time Out"
+msgstr "超时"
+
+#: ../src/view_results.cpp:219 ../src/start_judge.cpp:400
+msgid "Memory Out"
+msgstr "内存错误"
+
+#: ../src/view_results.cpp:220
+msgid "Non-zero Exit Code"
+msgstr "非零返回值"
+
+#: ../src/view_results.cpp:247
+msgid "Please select the output file"
+msgstr "请选择输出文件"
+
+#: ../src/view_results.cpp:408
+#, c-format
+msgid ""
+"%s : %s : %d: \n"
+"%s\n"
+"Details:\n"
+"%s"
+msgstr ""
+"%s : %s : %d: \n"
+"%s\n"
+"详细信息：\n"
+"%s"
+
+#: ../src/view_results.cpp:425
+#, c-format
+msgid ""
+"Failed to get the contestants:\n"
+" %s\n"
+" (At %s : %s : %d)"
+msgstr ""
+"无法取得选手：\n"
+" %s\n"
+"(位于 %s : %s : %d)"
+
+#: ../src/view_results.cpp:431
+msgid "There is no contestant."
+msgstr "没有可评测的选手。"
+
+#: ../src/view_results.cpp:538
+msgid "Ranked Grades\n"
+msgstr "成绩报表\n"
+
+#: ../src/view_results.cpp:546 ../src/view_results.cpp:779
+msgid "Rank"
+msgstr "排名"
+
+#: ../src/view_results.cpp:547 ../src/view_results.cpp:779
+msgid "Name"
+msgstr "姓名"
+
+#: ../src/view_results.cpp:548 ../src/view_results.cpp:779
+msgid "Total Score"
+msgstr "总分"
+
+#: ../src/view_results.cpp:549 ../src/view_results.cpp:779
+msgid "Total Time [sec]"
+msgstr "总耗时 [秒]"
+
+#: ../src/view_results.cpp:576
+#, c-format
+msgid "Details for contestant '%s'\n"
+msgstr "选手“%s”的评测细节\n"
+
+#: ../src/view_results.cpp:581
+#, c-format
+msgid "Problem: %s\n"
+msgstr "试题：%s\n"
+
+#: ../src/view_results.cpp:584
+msgid "Not Judged.\n"
+msgstr "尚未评测。\n"
+
+#: ../src/view_results.cpp:589
+msgid "Source file is not found.\n"
+msgstr "未找到源文件。\n"
+
+#: ../src/view_results.cpp:592 ../src/view_results.cpp:836
+msgid ""
+"Failed to compile.\n"
+"Details:\n"
+msgstr ""
+"编译失败。\n"
+"详细信息：\n"
+
+#: ../src/view_results.cpp:600 ../src/view_results.cpp:819
+#: ../src/start_judge.cpp:379
+msgid "Point"
+msgstr "测试点"
+
+#: ../src/view_results.cpp:601 ../src/view_results.cpp:819
+msgid "Execution Status"
+msgstr "运行状态"
+
+#: ../src/view_results.cpp:602 ../src/view_results.cpp:819
+msgid "Score"
+msgstr "得分"
+
+#: ../src/view_results.cpp:603 ../src/view_results.cpp:819
+msgid "Time [sec]"
+msgstr "耗时 [秒]"
+
+#: ../src/view_results.cpp:604 ../src/view_results.cpp:819
+msgid "Memory [kb]"
+msgstr "内存 [kb]"
+
+#: ../src/view_results.cpp:629
+msgid "Go Back"
+msgstr "返回"
+
+#: ../src/view_results.cpp:716
+#, c-format
+msgid ""
+"%s : %s : %d :  Failed to open file ('%s').\n"
+"Details:\n"
+"%s\n"
+msgstr ""
+"%s : %s : %d :  打开文件失败 (“%s”)。\n"
+"详细信息：\n"
+"%s\n"
+
+#: ../src/view_results.cpp:723
+#, c-format
+msgid "<title> Judge Results for Contest \"%s\"</title>\n"
+msgstr "<title> 比赛“%s”的评测结果 </title>\n"
+
+#. Ranked Grades start
+#: ../src/view_results.cpp:776
+msgid "Ranked Grades"
+msgstr "成绩报表"
+
+#: ../src/view_results.cpp:814
+#, c-format
+msgid ""
+"<a name=\"%d\" class=\"none\"><B><h3>Details for Contestant \"%s\"</h3></B></"
+"a>\n"
+msgstr "<a name=\"%d\" class=\"none\"><B><h3>选手“%s”的详细信息</h3></B></a>\n"
+
+#: ../src/view_results.cpp:819
+msgid "Problem"
+msgstr "试题"
+
+#: ../src/view_results.cpp:825
+msgid "Not Judged."
+msgstr "尚未评测。"
+
+#: ../src/view_results.cpp:831 ../src/start_judge.cpp:363
+msgid "Source file is not found."
+msgstr "未找到源文件。"
+
+#: ../src/view_results.cpp:865
+msgid "Top"
+msgstr "回到顶部"
+
+#: ../src/view_results.cpp:877
+msgid "%H:%M:%S ,%a %b %d, %Y"
+msgstr "%Y年%b%d日 星期%a %H:%M:%S"
+
+#: ../src/view_results.cpp:897
+msgid "Failed to export: No such contestant."
+msgstr "导出失败：无此选手。"
+
+#: ../src/start_judge.cpp:79 ../src/start_judge.cpp:225
+#, c-format
+msgid ""
+"%s : %s : %d  : Failed to initialize the contest configuration.\n"
+"Details:\n"
+"%s\n"
+msgstr ""
+"%s : %s : %d  ：初始化比赛配置失败。\n"
+"详细信息：\n"
+"%s\n"
+
+#: ../src/start_judge.cpp:89
+#, c-format
+msgid "No problem is selected. Exit.\n"
+msgstr "未选择试题。退出。\n"
+
+#: ../src/start_judge.cpp:96 ../src/start_judge.cpp:251
+#, c-format
+msgid ""
+"%s : %s : %d  : Failed to get the contestants.\n"
+"Details:\n"
+"%s\n"
+msgstr ""
+"%s : %s : %d  ：获取选手列表失败。\n"
+"详细信息：\n"
+"%s\n"
+
+#: ../src/start_judge.cpp:103
+#, c-format
+msgid "No contestant is selected. Exit.\n"
+msgstr "未选择选手。退出。\n"
+
+#: ../src/start_judge.cpp:127
+#, c-format
+msgid "%s : %s : %d  : Faied to create the thread.\n"
+msgstr "%s : %s : %d  ：创建线程失败。\n"
+
+#: ../src/start_judge.cpp:146
+#, c-format
+msgid "Current contestant: %-10s (%d of %d)"
+msgstr "当前选手：%-10s (%d/%d)"
+
+#. remove unused results
+#: ../src/start_judge.cpp:155
+#, c-format
+msgid ""
+"\n"
+"Judging contestant '%s' ...\n"
+msgstr ""
+"\n"
+"正在评测选手 “%s” ……\n"
+
+#: ../src/start_judge.cpp:160
+#, c-format
+msgid "Current problem:    %-10s (%d of %d)"
+msgstr "当前试题：%-10s (%d/%d)"
+
+#: ../src/start_judge.cpp:161
+#, c-format
+msgid ""
+"\n"
+" Judging problem '%s' ...\n"
+msgstr ""
+"\n"
+" 正在评测试题“%s” ……\n"
+
+#: ../src/start_judge.cpp:181 ../src/start_judge.cpp:325
+#, c-format
+msgid ""
+"%s : %s : %d  : An system error occurred.\n"
+"Details:\n"
+"%s\n"
+msgstr ""
+"%s : %s : %d  ：发生了系统错误。\n"
+"详细信息：\n"
+"%s\n"
+
+#: ../src/start_judge.cpp:189 ../src/start_judge.cpp:331
+#, c-format
+msgid ""
+"%s : %s : %d  : Failed to run the verifier.\n"
+"Details:\n"
+"%s\n"
+msgstr ""
+"%s : %s : %d  运行校验器失败。\n"
+"详细信息：\n"
+"%s\n"
+
+#: ../src/start_judge.cpp:191
+#, c-format
+msgid "Judge process has been stopped.\n"
+msgstr "评测过程已停止。\n"
+
+#: ../src/start_judge.cpp:198 ../src/start_judge.cpp:338
+#, c-format
+msgid "%s : %s : %d  : Failed to convert the judge result.\n"
+msgstr "%s : %s : %d  ：转译评测结果失败。\n"
+
+#: ../src/start_judge.cpp:208 ../src/start_judge.cpp:347
+#, c-format
+msgid ""
+"%s : %s : %d  : Failed to save the result file ('%s').\n"
+"Details:\n"
+"%s\n"
+msgstr ""
+"%s : %s : %d  ：保存结果文件 (“%s”)失败。\n"
+"详细信息：\n"
+"%s\n"
+
+#: ../src/start_judge.cpp:216
+#, c-format
+msgid "Finished.\n"
+msgstr "完成。\n"
+
+#: ../src/start_judge.cpp:242
+#, c-format
+msgid "No such contestant '%s'.\n"
+msgstr "无名为“%s”的选手。\n"
+
+#: ../src/start_judge.cpp:258
+#, c-format
+msgid "No contentant to judge.\n"
+msgstr "没有可评测的选手。\n"
+
+#: ../src/start_judge.cpp:277
+#, c-format
+msgid "No such problem '%s'.\n"
+msgstr "没有名为“%s”的试题。\n"
+
+#: ../src/start_judge.cpp:288
+#, c-format
+msgid "No problem to judge.\n"
+msgstr "没有可评测的试题。\n"
+
+#: ../src/start_judge.cpp:366
+msgid "Found source file: "
+msgstr "找到源文件："
+
+#: ../src/start_judge.cpp:369
+msgid "Compiling ..."
+msgstr "编译中……"
+
+#: ../src/start_judge.cpp:372
+msgid "Successful compilation."
+msgstr "编译成功。"
+
+#: ../src/start_judge.cpp:375
+msgid "Failed to compile."
+msgstr "编译失败。"
+
+#: ../src/start_judge.cpp:375
+msgid "Compiler output:"
+msgstr "编译器输出："
+
+#: ../src/start_judge.cpp:379
+msgid "Executing the program..."
+msgstr "正在运行选手程序……"
+
+#: ../src/start_judge.cpp:382
+msgid "The program ended."
+msgstr "选手程序结束。"
+
+#: ../src/start_judge.cpp:385
+msgid "Verifing the output ..."
+msgstr "正在校验输出……"
+
+#: ../src/start_judge.cpp:393
+msgid "Right"
+msgstr "正确"
+
+#: ../src/start_judge.cpp:394
+msgid "Wrong Answer"
+msgstr "错误"
+
+#: ../src/start_judge.cpp:397
+msgid "Timeout"
+msgstr "超时"
+
+#: ../src/start_judge.cpp:403
+msgid "A non-zero value is returned."
+msgstr "返回值非零。"
+
+#: ../src/start_judge.cpp:425
+#, c-format
+msgid ""
+"Call to system(\"%s\") failed while running verifier. system() returned %d.\n"
+"errno:%s\n"
+"(At %s : %s : %d)"
+msgstr ""
+"调用 system(\"%s\") 失败。 system() 返回 %d。\n"
+"errno：%s\n"
+"(位于 %s : %s : %d)"
+
+#: ../src/start_judge.cpp:436
+msgid "The customized verifier did not produce a correct output file."
+msgstr "自定义校验器输出文件错误。"
+
+#: ../src/start_judge.cpp:445
+#, c-format
+msgid ""
+"unlink: %s.\n"
+"(At %s : %s : %d)"
+msgstr ""
+"unlink: %s.\n"
+"(位于 %s : %s : %d)"
+
+#: ../src/judge_core.cpp:285
+msgid ""
+"Compilation time out. Please refer to 'man 1 injuslin' for more information."
+msgstr "编译超时。请参考“man 1 injuslin”以获取更多信息。"
+

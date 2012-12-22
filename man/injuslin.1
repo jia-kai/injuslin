@@ -1,0 +1,188 @@
+.\" Copyright (C) (2008, 2009) (jiakai) <jia.kai66@gmail.com>
+.\"
+.\" This program is free software; you can redistribute it and/or 
+.\" modify it under the terms of the GNU General Public License 
+.\" as published by the Free Software Foundation; either 
+.\" version 2 of the License, or any later version.
+.\"
+.\" This program is distributed in the hope that it will be useful,
+.\" but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\" GNU General Public License for more details.
+.\"
+.\" You should have received a copy of the GNU General Public License
+.\" along with this program; if not, write to the Free Software
+.\" Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+.\"
+.\" Process this file with
+.\" groff -man -Tascii injuslin.1
+.\"
+.TH INJUSLIN 1 "July 2011" "injuslin version 1.0-beta2" "Linux User's Manual"
+
+.SH NAME
+injuslin \- INformatics JUdge System for LINux
+
+.SH SYNOPSIS
+.B injuslin [\-f
+.I file
+.B ] [\-j | \-q [
+.I ct:br
+.B ]] [\-r 
+.I file
+.B ] [\-R [
+.I ct
+.B ]] [\-h] [\-v]
+
+.SH DESCRIPTION
+.B injuslin
+is a useful tool for judging informatics contests under Linux.
+.P
+It has a GUI configuration interface, which can automatically
+configure the contest. 
+.P
+It's also safe to use. By default, the contestants'
+programs will be executed with
+.I nobody
+user, and you can change the building options to make
+.B injuslin
+support
+.I chroot
+execution.
+.P
+The judge mode is of CUI, so you can kill all the unnecessary programs
+, including X, to minimize other programs' effect to contests' programs.
+.P
+Judge results can be viewed directly in
+.B injuslin
+\&. You can also export them to a single HTML file including
+statistics for AC proportion of each problem and each contestant.
+.P
+Note: all the paths(standard input file, standard output file, etc.) in a contest configuration is related to the directory
+of the configuration file.
+
+.SH OPTIONS
+.IP \-f,\ \-\-file=file
+Designate the configuration file. 
+By default, a dialog will pop up to 
+ask the user to select a file.
+.IP \-j,\ \-\-judge
+Run in judge mode in CUI.
+.B injuslin
+will ask the user to select the contestants and problems to judge. Option \-f is required.
+.IP \-q,\ \-\-quiet[=ct:pr]
+Run in quiet judge mode. Judge process will be started directly, without printing anything to standard output.
+If
+.I ct
+and
+.I pr
+are given, judge the contentant
+.I ct
+and problem
+.I pr
+\&. You can omit either of the two fields to judge all the contestants/problems.
+For example,
+.B injuslin
+.I \-q:test
+means judge the problem 'test' for all contestants. Option -f required.
+.IP \-r,\ \-\-report=file
+Output the judge results 
+in HTML format to
+.I file
+\&. Option -f required.
+.IP \-R,\ \-\-result[=ct]
+Print the judge results to standard output.
+If
+.I ct
+is given, only print the results of contentant
+.I ct
+\&. Option -f required.
+.IP \-h,\ \-\-help
+Display help and exit.
+.IP \-v,\ \-\-version
+Display version information and exit.
+
+.SH ABOUT COMPILATION TIME LIMIT
+There are some programs that can produce a mess to the compiler, making the compiler consume too much time and/or memory. 
+So, it is necessary to limit the compilation time. The time limit is 10 seconds by default, defined in judge_core.cpp .
+If you do not want to do so, you can undefine MAX_COMPILATION_TIME.
+.sp
+Here is a C program that makes 
+.B gcc
+consume all the memory and finally crash:
+.sp
+.nf
+#define A(x) x##x
+#define B(x) A(x)A(x)
+#define C(x) B(B(x))
+#define D(x) C(C(x))
+#define E(x) D(D(x))
+#define F(x) E(E(x))
+#define G(x) F(F(x))
+#define H(x) G(G(x))
+
+int main()
+{
+	int H(x) = 0;
+}
+.fi
+
+.SH ABOUT CONTEST CONFIGURATION
+.IP Customized\ Verifier
+The customized verifier should be executable. It takes four arguments from command line:
+the fullscore (a double number), the standard input file path, the standard output file path and the contestant's output file path.
+The verifier should output the score(a double number) of the contestant to standard output.
+.sp
+Here is the C source for a simple verifier of a+b problem:
+.nf
+
+#include <assert.h>
+#include <stdio.h>
+#include <unistd.h>
+
+int main(int argc, char **argv)
+{
+	assert(argc == 5);
+	double score;
+	assert(sscanf(argv[1], "%lf", &score) == 1);
+	FILE *in = fopen(argv[2], "r"), *out = fopen(argv[4], "r");
+	assert(in != NULL);
+	assert(out != NULL);
+
+	int a, b, c;
+	fscanf(in, "%d %d", &a, &b);
+	fscanf(out, "%d", &c);
+	if (a + b == c)
+		printf("%lf\\n", score);
+	else printf("0\\n");
+}
+.fi
+
+The customized verifier in a contest configuration actually means the path of the verifier, related to the directory
+of the configuration file.
+
+.IP Resource\ Limit
+.B injuslin
+will set
+.B RLIMIT_NPROC
+to 0, and
+.B RLIMIT_AS
+,
+.B RLIMIT_DATA
+and
+.B RLIMIT_STACK
+can be customized by the user. For details about resource limit, please 
+refer to
+.BR setrlimit (2)
+\&. Usually, if you want to limit the memory usage of a program to 
+.I N
+KB,
+you can set RLIMIT_AS to
+.I N
+* 1024.
+
+.SH REPORTING BUGS
+Report bugs to <jia.kai66@gmail.com>
+
+.SH AUTHOR
+Jiakai <jia.kai66@gmail.com>
+

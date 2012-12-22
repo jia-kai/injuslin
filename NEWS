@@ -1,0 +1,27 @@
+2009-10-20
+release injuslin 1.0 beta1
+*  Limit compilation time
+*  Beautify HTML output
+
+2009-10-03
+release injuslin 1.0 alpha
+* Almost rewrite the whole project, so the version number is 1.0 now.
+* Main changes:
+*   reorganize the source files and structures
+*   GUI configuration support
+*   chroot support
+*   fix various secure loopholes
+
+2009-02-09
+ready to release injuslin 0.1
+	Bugs found in the beta edition are fixed.
+
+
+2008-11-30
+release injuslin 0.1 beta
+	The improvments are mainly about the interface.
+	See ChangeLog for more information.
+
+
+2008-08-25
+injuslin 0.1 alpha is released

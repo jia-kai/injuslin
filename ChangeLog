@@ -1,0 +1,137 @@
+2011-07-16 Jiakai <jia.kai66@gmail.com>
+* link to ncursesw instead of ncurses
+* better report HTML page
+
+2011-07-06  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* m4/gettext.m4: New file, from gettext-0.17.
+	* m4/iconv.m4: New file, from gettext-0.17.
+	* m4/lib-ld.m4: New file, from gettext-0.17.
+	* m4/lib-link.m4: New file, from gettext-0.17.
+	* m4/lib-prefix.m4: New file, from gettext-0.17.
+	* m4/nls.m4: New file, from gettext-0.17.
+	* m4/po.m4: New file, from gettext-0.17.
+	* m4/progtest.m4: New file, from gettext-0.17.
+	* Makefile.am (EXTRA_DIST): Add config.rpath.
+
+2011-07-06	Jiakai <jia.kai66@gmail.com>
+* fix some bugs and compilation error
+* new file comparing algorithm
+
+2009-11-27	Jiakai <jia.kai66@gmail.com>
+* Add file: trie.h, trie.cpp
+*    Implement the trie algorithm
+
+2009-11-24	Jiakai <jia.kai66@gmail.com>
+* Add file:  add_points.h, add_points.cpp:
+* Del file:  auto_add_points.h, auto_add_points.cpp
+* Edit file: configure_contest.cpp
+*    Move the implementations of auto_add_points() and manually_add_points() to
+*      these files, getting ready for the programming for CUI.
+
+2009-10-16	Jiakai <jia.kai66@gmail.com>
+* view_results.cpp :
+*    Convert HTML special chars.
+
+2009-10-10	Jiakai <jia.kai66@gmail.com>
+* judge_core.cpp :
+*    Limit the compilation time.
+*    Support system error handling while compiling.
+* view_results.cpp :
+*    Beautify the HTML output.
+
+
+2009-10-03	Jiakai <jia.kai66@gmail.com>
+* Almost rewrite the whole project, so the version number is 1.0 now.
+* Main changes:
+*   reorganize the source files and structures
+*   GUI configuration support
+*   chroot support
+*   fix various secure loopholes
+
+2009-04-23	Jiakai <jia.kai66@gmail.com>
+* According to `man readdir`, "use of other fields will harm the portability of
+your programs", so use stat() instead.
+
+2009-03-26	Jiakai <jia.kai66@gmail.com>
+* Add colorful output when judging
+* Use chdir() instead of getbasedir() to make the program more stable.
+
+2009-03-23	Jiakai <jia.kai66@gmail.com>
+* Fix bug: Write FPC's output to screen normally. It used to produce a mess on
+the screen.
+
+
+2009-02-09	Jiakai <jia.kai66@gmail.com>
+
+* Fix bug: Automatically refresh when automatically adding new test points for a problem
+* Fix bug: Make it possible to enter a space when reading user's input.
+* Fix bug: Fix the segmentation fault in class Error.
+* Fix a bug in funtion ncurses::Window::print_longmsg
+
+* Do not leave the problem name in the list if failing to automatically
+configure problems.
+
+* Ready to release injuslin 0.1, but there is no connection to Internet here.
+
+
+2008-11-30	Jiakai <jia.kai66@gmail.com>
+
+* Add member function get_file_path() in class Conf, for a better way of programming.
+
+* relase injuslin 0.1 beta.
+
+
+2008-11-28	Jiakai <jia.kai66@gmail.com>
+
+* Improve the function for reading data from keyboard.
+
+* Provide a better way for manually adding test points.
+
+
+2008-11-27	Jiakai <jia.kai66@gmail.com>
+
+* Add a function to automatically configure problems.
+
+
+2008-11-26	Jiakai <jia.kai66@gmail.com>
+
+* Make it possible to stop the judge process.
+
+* Put the contestants' judge results into each contestant's source file
+directory instead of the configuration file of the contest.
+
+
+2008-11-25	Jiakai <jia.kai66@gmail.com>
+
+* Forbid a contestant's program to write anything on the screen.
+
+
+2008-11-23	Jiakai <jia.kai66@gmail.com>
+
+* Provide namespace "ncurses" for UI programming. Modify the majority of
+manage_test.cpp.
+( Create cui/interface.cpp. Delete cui/display_contestants.cpp)
+
+* Improve the user interface of the judge process.
+
+
+2008-11-18	Jiakai <jia.kai66@gmail.com>
+
+* Start developing 0.1-Beta
+
+
+2008-08-26	Jiakai <jia.kai66@gmail.com>
+
+* Fix bug: after deleting a problem, the judge results about this problem
+should automatically be deleted.
+
+* Better UI: more information is shown when failed to automatically add test
+potints.
+
+
+2008-08-25	Jiakai <jia.kai66@gmail.com>
+
+* relase injuslin 0.1 alpha.
+
+

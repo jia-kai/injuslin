@@ -1,0 +1,846 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Jiakai
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: jia.kai66@gmail.com\n"
+"POT-Creation-Date: 2009-10-19 22:38+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/auto_add_points.cpp:146
+#, c-format
+msgid "%s : %s : %d:  chdir(\"%s\"): %s\n"
+msgstr ""
+
+#: src/auto_add_points.cpp:154
+#, c-format
+msgid "%s : %s : %d:  opendir: %s\n"
+msgstr ""
+
+#: src/auto_add_points.cpp:166
+#, c-format
+msgid "%s : %s : %d:  stat: %s\n"
+msgstr ""
+
+#: src/auto_add_points.cpp:179
+#, c-format
+msgid "%s : %s : %d:  fchdir: %s\n"
+msgstr ""
+
+#: src/main.cpp:65
+#, c-format
+msgid "(At %s : %s : %d)\n"
+msgstr ""
+
+#: src/main.cpp:116
+msgid "Unrecognizable format of argument of option -q"
+msgstr ""
+
+#: src/main.cpp:117 src/main.cpp:146
+msgid "Try -h option for more information."
+msgstr ""
+
+#: src/main.cpp:132
+#, c-format
+msgid ""
+"%s\n"
+"Written by %s. \n"
+msgstr ""
+
+#: src/main.cpp:145
+msgid "Option -f not found."
+msgstr ""
+
+#: src/main.cpp:170
+msgid "Please select the configuration file"
+msgstr ""
+
+#: src/main.cpp:183
+#, c-format
+msgid ""
+"Usage: %s [options]\n"
+"INformatics JUdge System for LINux\n"
+"\n"
+"Options are:\n"
+msgstr ""
+
+#: src/main.cpp:184
+msgid ""
+"-f, --file=file      Designate the configuration file. \n"
+"                     By default, a dialog will pop up to \n"
+"                     ask the user to select a file.\n"
+msgstr ""
+
+#: src/main.cpp:188
+msgid ""
+"-j, --judge          Run in judge mode. \n"
+"                     Option -f required.\n"
+msgstr ""
+
+#: src/main.cpp:191
+msgid ""
+"-q, --quiet[=ct:pr]  Run in quiet judge mode, \n"
+"                     meaning start judge process directly, \n"
+"                     without printing to standand output. \n"
+"                     If ct and pr are given, judge the \n"
+"                     contentant ct and problem pr. \n"
+"                     If either ct or pr is empty, \n"
+"                     it means all. (e.g. -q:test means \n"
+"                     judge the problem 'test' for all contestants.)\n"
+"                     Option -f required.\n"
+msgstr ""
+
+#: src/main.cpp:201
+msgid ""
+"-r, --report=file    Output the judge results \n"
+"                     in HTML format to the file. \n"
+"                     Option -f required.\n"
+msgstr ""
+
+#: src/main.cpp:205
+msgid ""
+"-R, --result[=ct]    Print the judge results \n"
+"                     to standand output. \n"
+"                     If ct is given, only print the \n"
+"                     results of contentant ct. \n"
+"                     Option -f required.\n"
+msgstr ""
+
+#: src/main.cpp:211
+msgid "-h, --help           Display this help and exit.\n"
+msgstr ""
+
+#: src/main.cpp:213
+msgid "-v, --version        Output version information and exit.\n"
+msgstr ""
+
+#: src/main.cpp:215
+#, c-format
+msgid "Please report bugs to <%s>\n"
+msgstr ""
+
+#: src/main.cpp:229
+msgid "Configure the contest"
+msgstr ""
+
+#: src/main.cpp:234
+msgid "Start judge"
+msgstr ""
+
+#: src/main.cpp:239
+msgid "View the judge results"
+msgstr ""
+
+#: src/main.cpp:285
+msgid ""
+"Judge in graphics mode is currently not supported. \n"
+"Please view injuslin's manual page or run 'injuslin -h' from console for "
+"more information. "
+msgstr ""
+
+#: src/configure_contest.cpp:143
+#, c-format
+msgid ""
+"%s\n"
+"Details:\n"
+"%s"
+msgstr ""
+
+#: src/configure_contest.cpp:144 src/view_results.cpp:408
+msgid ""
+"Error while initializing the contest configuration.\n"
+"Maybe the configuration file is broken."
+msgstr ""
+
+#: src/configure_contest.cpp:147 src/gtk_addition.cpp:85
+msgid "Error"
+msgstr ""
+
+#: src/configure_contest.cpp:205
+msgid "NONE"
+msgstr ""
+
+#: src/configure_contest.cpp:218
+msgid "General _Options"
+msgstr ""
+
+#: src/configure_contest.cpp:223
+msgid "Auto. _Configure"
+msgstr ""
+
+#: src/configure_contest.cpp:228
+msgid "_Add Problem"
+msgstr ""
+
+#: src/configure_contest.cpp:236 src/configure_contest.cpp:728
+#: src/configure_contest.cpp:736
+msgid "_Delete Problem"
+msgstr ""
+
+#: src/configure_contest.cpp:243
+msgid "Add _Test Points"
+msgstr ""
+
+#: src/configure_contest.cpp:250
+msgid "Auto. Add Test _Points"
+msgstr ""
+
+#: src/configure_contest.cpp:284
+msgid ""
+"Failed to save the configuration file.\n"
+"Please choose another path, or all the changes will be lost.\n"
+"Would you like to choose another file path?"
+msgstr ""
+
+#: src/configure_contest.cpp:289
+msgid "Please select another configuration file"
+msgstr ""
+
+#: src/configure_contest.cpp:309
+#, c-format
+msgid ""
+"More than one problem use the same name '%s'.\n"
+"Please change their names, so they are different from each other."
+msgstr ""
+
+#: src/configure_contest.cpp:340
+#, c-format
+msgid ""
+"Failed to list the directory.\n"
+"Details:\n"
+"%s"
+msgstr ""
+
+#: src/configure_contest.cpp:356
+#, c-format
+msgid "Directory '%s' is found. Assume in it is a problem configuration."
+msgstr ""
+
+#: src/configure_contest.cpp:375
+msgid "Please enter the time limit[s] for every point:"
+msgstr ""
+
+#: src/configure_contest.cpp:381
+msgid "Please enter the score for every point:"
+msgstr ""
+
+#: src/configure_contest.cpp:385
+msgid "Please enter the rlimit_as for every point:"
+msgstr ""
+
+#: src/configure_contest.cpp:389
+msgid "Please enter the rlimit_data for every point:"
+msgstr ""
+
+#: src/configure_contest.cpp:393
+msgid "Please enter the rlimit_stack for every point:"
+msgstr ""
+
+#: src/configure_contest.cpp:420
+#, c-format
+msgid ""
+"Failed to automatically add test points.\n"
+"You should put the input and output files in the directory '%s/%s'.\n"
+"And there should not be any extra files."
+msgstr ""
+
+#: src/configure_contest.cpp:460
+msgid "Please enter the pattern for standard input files:"
+msgstr ""
+
+#: src/configure_contest.cpp:465
+msgid "Please enter the pattern for standard output files:"
+msgstr ""
+
+#: src/configure_contest.cpp:471
+#, c-format
+msgid ""
+"Please enter the values that are separated by a space to replace the '%%' "
+"mark:"
+msgstr ""
+
+#: src/configure_contest.cpp:516
+#, c-format
+msgid "Are you sure to delete the problem '%s'?"
+msgstr ""
+
+#: src/configure_contest.cpp:540
+msgid "Please enter the problem name"
+msgstr ""
+
+#: src/configure_contest.cpp:547
+msgid "This name already exists."
+msgstr ""
+
+#: src/configure_contest.cpp:557
+msgid "Problem Information"
+msgstr ""
+
+#: src/configure_contest.cpp:573
+msgid "Problem Name:"
+msgstr ""
+
+#: src/configure_contest.cpp:574
+msgid "Source File Name:"
+msgstr ""
+
+#: src/configure_contest.cpp:575 src/configure_contest.cpp:634
+msgid "Input File Name:"
+msgstr ""
+
+#: src/configure_contest.cpp:576 src/configure_contest.cpp:635
+msgid "Output File Name:"
+msgstr ""
+
+#: src/configure_contest.cpp:581
+msgid "Standard Verifier"
+msgstr ""
+
+#: src/configure_contest.cpp:584
+msgid "Customized Verifier"
+msgstr ""
+
+#: src/configure_contest.cpp:589
+msgid ""
+"For more information about the configuration, please refer to injuslin's "
+"manual page."
+msgstr ""
+
+#: src/configure_contest.cpp:618
+msgid "Test Point Information"
+msgstr ""
+
+#: src/configure_contest.cpp:636
+msgid "Score:"
+msgstr ""
+
+#: src/configure_contest.cpp:641
+msgid "Time Limit[s]:"
+msgstr ""
+
+#: src/configure_contest.cpp:652
+msgid "Resource Limit (-1 means unlimited)"
+msgstr ""
+
+#: src/configure_contest.cpp:658
+msgid "rlimit_as:"
+msgstr ""
+
+#: src/configure_contest.cpp:659
+msgid "rlimit_data:"
+msgstr ""
+
+#: src/configure_contest.cpp:660
+msgid "rlimit_stack:"
+msgstr ""
+
+#: src/configure_contest.cpp:684
+msgid "Problems"
+msgstr ""
+
+#: src/configure_contest.cpp:724
+msgid "_Delete Test Point"
+msgstr ""
+
+#: src/configure_contest.cpp:942
+msgid "General Options"
+msgstr ""
+
+#: src/configure_contest.cpp:968
+msgid "Contest Name:"
+msgstr ""
+
+#: src/configure_contest.cpp:970
+msgid "Source file directory:"
+msgstr ""
+
+#: src/configure_contest.cpp:972
+msgid "Compiler Options"
+msgstr ""
+
+#: src/configure_contest.cpp:985
+msgid "File Extension"
+msgstr ""
+
+#: src/configure_contest.cpp:988
+msgid "Compiler Command"
+msgstr ""
+
+#: src/configure_contest.cpp:1006
+msgid "_Add"
+msgstr ""
+
+#: src/configure_contest.cpp:1011
+msgid "_Remove"
+msgstr ""
+
+#: src/configure_contest.cpp:1026
+msgid "Please enter the file extension"
+msgstr ""
+
+#: src/configure_contest.cpp:1029
+msgid "Sorry, you entered an empty string."
+msgstr ""
+
+#: src/configure_contest.cpp:1046
+msgid "Cannot remove the last item."
+msgstr ""
+
+#: src/configure_contest.cpp:1051
+msgid "No item is selected."
+msgstr ""
+
+#: src/gtk_addition.cpp:56
+msgid "Input"
+msgstr ""
+
+#: src/gtk_addition.cpp:96
+msgid "Warning"
+msgstr ""
+
+#: src/gtk_addition.cpp:107
+msgid "Confirm"
+msgstr ""
+
+#: src/gtk_addition.cpp:119
+msgid "Message"
+msgstr ""
+
+#: src/structures.cpp:38
+#, c-format
+msgid "Invalid version of the configuration file."
+msgstr ""
+
+#: src/structures.cpp:51
+#, c-format
+msgid ""
+"Unable to fetch the 'compiler.command' section.\n"
+"(At %s : %s : %d)"
+msgstr ""
+
+#: src/structures.cpp:58 src/structures.cpp:102
+#, c-format
+msgid ""
+"Unable to fetch source file directory.\n"
+"(At %s : %s : %d)"
+msgstr ""
+
+#: src/structures.cpp:67 src/structures.cpp:111
+#, c-format
+msgid ""
+"Unable to fetch contest name.\n"
+"(At %s : %s : %d)"
+msgstr ""
+
+#: src/structures.cpp:75 src/structures.cpp:119
+#, c-format
+msgid ""
+"Unable to fetch number of problems.\n"
+"(At %s : %s : %d)"
+msgstr ""
+
+#: src/structures.cpp:95
+#, c-format
+msgid ""
+"Unable to fetch the 'compiler' section.\n"
+"(At %s : %s : %d)"
+msgstr ""
+
+#: src/structures.cpp:148
+#, c-format
+msgid ""
+"Unable to fetch the name of problem #%d.\n"
+"(At %s : %s : %d)"
+msgstr ""
+
+#: src/structures.cpp:156 src/structures.cpp:187
+#, c-format
+msgid ""
+"Unable to fetch the '%s' field of problem #%d.\n"
+"(At %s : %s : %d)"
+msgstr ""
+
+#: src/structures.cpp:168 src/structures.cpp:206
+#, c-format
+msgid ""
+"Unable to fetch the number of points of problem #%d.\n"
+"(At %s : %s : %d)"
+msgstr ""
+
+#: src/structures.cpp:199
+#, c-format
+msgid ""
+"Invalid verifier '%s' of problem #%d.\n"
+"(At %s : %s : %d)"
+msgstr ""
+
+#: src/structures.cpp:222
+#, c-format
+msgid ""
+"Unable to fetch the '%s' item in section '%s'.\n"
+"(At %s : %s : %d)"
+msgstr ""
+
+#: src/view_results.cpp:176
+msgid "_Export as HTML"
+msgstr ""
+
+#: src/view_results.cpp:216
+msgid "Normal"
+msgstr ""
+
+#: src/view_results.cpp:217
+msgid "Time Out"
+msgstr ""
+
+#: src/view_results.cpp:218 src/start_judge.cpp:401
+msgid "Memory Out"
+msgstr ""
+
+#: src/view_results.cpp:219
+msgid "Non-zero Exit Code"
+msgstr ""
+
+#: src/view_results.cpp:246
+msgid "Please select the output file"
+msgstr ""
+
+#: src/view_results.cpp:407
+#, c-format
+msgid ""
+"%s : %s : %d: \n"
+"%s\n"
+"Details:\n"
+"%s"
+msgstr ""
+
+#: src/view_results.cpp:424
+#, c-format
+msgid ""
+"Failed to get the contestants:\n"
+" %s\n"
+" (At %s : %s : %d)"
+msgstr ""
+
+#: src/view_results.cpp:430
+msgid "There is no contestant."
+msgstr ""
+
+#: src/view_results.cpp:536
+msgid "Ranked Grades\n"
+msgstr ""
+
+#: src/view_results.cpp:544 src/view_results.cpp:777
+msgid "Rank"
+msgstr ""
+
+#: src/view_results.cpp:545 src/view_results.cpp:777
+msgid "Name"
+msgstr ""
+
+#: src/view_results.cpp:546
+msgid "Total Score"
+msgstr ""
+
+#: src/view_results.cpp:547
+msgid "Total Time [sec]"
+msgstr ""
+
+#: src/view_results.cpp:574
+#, c-format
+msgid "Details for contestant '%s'\n"
+msgstr ""
+
+#: src/view_results.cpp:579
+#, c-format
+msgid "Problem: %s\n"
+msgstr ""
+
+#: src/view_results.cpp:582
+msgid "Not Judged.\n"
+msgstr ""
+
+#: src/view_results.cpp:587
+msgid "Source file is not found.\n"
+msgstr ""
+
+#: src/view_results.cpp:590 src/view_results.cpp:859
+msgid ""
+"Failed to compile.\n"
+"Details:\n"
+msgstr ""
+
+#: src/view_results.cpp:598 src/view_results.cpp:842 src/start_judge.cpp:380
+msgid "Point"
+msgstr ""
+
+#: src/view_results.cpp:599 src/view_results.cpp:842
+msgid "Execution Status"
+msgstr ""
+
+#: src/view_results.cpp:600 src/view_results.cpp:777 src/view_results.cpp:842
+msgid "Score"
+msgstr ""
+
+#: src/view_results.cpp:601 src/view_results.cpp:777 src/view_results.cpp:842
+msgid "Time [sec]"
+msgstr ""
+
+#: src/view_results.cpp:602 src/view_results.cpp:842
+msgid "Memory [kb]"
+msgstr ""
+
+#: src/view_results.cpp:627
+msgid "Go Back"
+msgstr ""
+
+#: src/view_results.cpp:714
+#, c-format
+msgid ""
+"%s : %s : %d :  Failed to open file ('%s').\n"
+"Details:\n"
+"%s\n"
+msgstr ""
+
+#: src/view_results.cpp:721
+#, c-format
+msgid "<title> Judge Results for Contest \"%s\"</title>\n"
+msgstr ""
+
+#: src/view_results.cpp:774
+msgid "Ranked Grades"
+msgstr ""
+
+#: src/view_results.cpp:791
+msgid "AC Statistics"
+msgstr ""
+
+#: src/view_results.cpp:796 src/view_results.cpp:827
+msgid "Proportion"
+msgstr ""
+
+#: src/view_results.cpp:837
+#, c-format
+msgid ""
+"<a name=\"%d\" class=\"none\"><B><h3>Details for Contestant \"%s\"</h3></B></"
+"a>\n"
+msgstr ""
+
+#: src/view_results.cpp:842
+msgid "Problem"
+msgstr ""
+
+#: src/view_results.cpp:848
+msgid "Not Judged."
+msgstr ""
+
+#: src/view_results.cpp:854 src/start_judge.cpp:364
+msgid "Source file is not found."
+msgstr ""
+
+#: src/view_results.cpp:888
+msgid "Top"
+msgstr ""
+
+#: src/view_results.cpp:900
+msgid "%H:%M:%S ,%a %b %d, %Y"
+msgstr ""
+
+#: src/view_results.cpp:920
+msgid "Failed to export: No such contestant."
+msgstr ""
+
+#: src/start_judge.cpp:80 src/start_judge.cpp:226
+#, c-format
+msgid ""
+"%s : %s : %d  : Failed to initialize the contest configuration.\n"
+"Details:\n"
+"%s\n"
+msgstr ""
+
+#: src/start_judge.cpp:90
+#, c-format
+msgid "No problem is selected. Exit.\n"
+msgstr ""
+
+#: src/start_judge.cpp:97 src/start_judge.cpp:252
+#, c-format
+msgid ""
+"%s : %s : %d  : Failed to get the contestants.\n"
+"Details:\n"
+"%s\n"
+msgstr ""
+
+#: src/start_judge.cpp:104
+#, c-format
+msgid "No contestant is selected. Exit.\n"
+msgstr ""
+
+#: src/start_judge.cpp:128
+#, c-format
+msgid "%s : %s : %d  : Faied to create the thread.\n"
+msgstr ""
+
+#: src/start_judge.cpp:147
+#, c-format
+msgid "Current contestant: %-10s (%d of %d)"
+msgstr ""
+
+#: src/start_judge.cpp:156
+#, c-format
+msgid ""
+"\n"
+"Judging contestant '%s' ...\n"
+msgstr ""
+
+#: src/start_judge.cpp:161
+#, c-format
+msgid "Current problem:    %-10s (%d of %d)"
+msgstr ""
+
+#: src/start_judge.cpp:162
+#, c-format
+msgid ""
+"\n"
+" Judging problem '%s' ...\n"
+msgstr ""
+
+#: src/start_judge.cpp:182 src/start_judge.cpp:326
+#, c-format
+msgid ""
+"%s : %s : %d  : An system error occurred.\n"
+"Details:\n"
+"%s\n"
+msgstr ""
+
+#: src/start_judge.cpp:190 src/start_judge.cpp:332
+#, c-format
+msgid ""
+"%s : %s : %d  : Failed to run the verifier.\n"
+"Details:\n"
+"%s\n"
+msgstr ""
+
+#: src/start_judge.cpp:192
+#, c-format
+msgid "Judge process has been stopped.\n"
+msgstr ""
+
+#: src/start_judge.cpp:199 src/start_judge.cpp:339
+#, c-format
+msgid "%s : %s : %d  : Failed to convert the judge result.\n"
+msgstr ""
+
+#: src/start_judge.cpp:209 src/start_judge.cpp:348
+#, c-format
+msgid ""
+"%s : %s : %d  : Failed to save the result file ('%s').\n"
+"Details:\n"
+"%s\n"
+msgstr ""
+
+#: src/start_judge.cpp:217
+#, c-format
+msgid "Finished.\n"
+msgstr ""
+
+#: src/start_judge.cpp:243
+#, c-format
+msgid "No such contestant '%s'.\n"
+msgstr ""
+
+#: src/start_judge.cpp:259
+#, c-format
+msgid "No contentant to judge.\n"
+msgstr ""
+
+#: src/start_judge.cpp:278
+#, c-format
+msgid "No such problem '%s'.\n"
+msgstr ""
+
+#: src/start_judge.cpp:289
+#, c-format
+msgid "No problem to judge.\n"
+msgstr ""
+
+#: src/start_judge.cpp:367
+msgid "Found source file: "
+msgstr ""
+
+#: src/start_judge.cpp:370
+msgid "Compiling ..."
+msgstr ""
+
+#: src/start_judge.cpp:373
+msgid "Successful compilation."
+msgstr ""
+
+#: src/start_judge.cpp:376
+msgid "Failed to compile."
+msgstr ""
+
+#: src/start_judge.cpp:376
+msgid "Compiler output:"
+msgstr ""
+
+#: src/start_judge.cpp:380
+msgid "Executing the program..."
+msgstr ""
+
+#: src/start_judge.cpp:383
+msgid "The program ended."
+msgstr ""
+
+#: src/start_judge.cpp:386
+msgid "Verifing the output ..."
+msgstr ""
+
+#: src/start_judge.cpp:394
+msgid "Right"
+msgstr ""
+
+#: src/start_judge.cpp:395
+msgid "Wrong Answer"
+msgstr ""
+
+#: src/start_judge.cpp:398
+msgid "Timeout"
+msgstr ""
+
+#: src/start_judge.cpp:404
+msgid "A non-zero value is returned."
+msgstr ""
+
+#: src/start_judge.cpp:454
+#, c-format
+msgid ""
+"Call to system(\"%s\") failed while running verifier. system() returned %d.\n"
+"errno:%s\n"
+"(At %s : %s : %d)"
+msgstr ""
+
+#: src/start_judge.cpp:465
+msgid "The customized verifier did not produce a correct output file."
+msgstr ""
+
+#: src/start_judge.cpp:474
+#, c-format
+msgid ""
+"unlink: %s.\n"
+"(At %s : %s : %d)"
+msgstr ""
+
+#: src/judge_core.cpp:285
+msgid ""
+"Compilation time out. Please refer to 'man 1 injuslin' for more information."
+msgstr ""

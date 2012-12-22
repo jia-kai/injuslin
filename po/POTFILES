@@ -1,0 +1,8 @@
+	../src/auto_add_points.cpp \
+	../src/main.cpp \
+	../src/configure_contest.cpp \
+	../src/gtk_addition.cpp \
+	../src/structures.cpp \
+	../src/view_results.cpp \
+	../src/start_judge.cpp \
+	../src/judge_core.cpp

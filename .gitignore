@@ -1,0 +1,7 @@
+*.o
+.deps
+*.cache
+*.swp
+Makefile
+Makefile.in
+test

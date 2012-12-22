@@ -1,0 +1,30 @@
+							injuslin
+
+  What is it?
+  -----------
+
+  Injuslin is short for "INformatics JUdge System for LINux".
+  It is used to judge infomatics contests.
+
+  There are already many programs of the same kind, but injuslin has
+  the following features:
+	1. Secure.  By default, it runs contestant's programs using
+	   the user nobody. Chroot environment is also supported
+	   (see ./configure --help). It is almost impossible for a contest's
+	   program to damage the judge system.
+	2. Efficient. Injuslin can automatically configure a contest (looking
+	   for problems and input and output files). And judge mode is of
+	   CUI(console user interface), so you can kill all the unnessesary
+	   programs, including X, to minimize other programs' effect to
+	   contests' programs.
+
+  Thanks for choosing injuslin! Enjoy!
+
+  Please report bugs and suggestions to Jiakai <jia.kai66@gmail.com>.
+
+
+  Installation
+  ------------
+
+  Please see the file INSTALL.
+  

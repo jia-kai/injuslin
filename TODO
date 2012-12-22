@@ -1,0 +1,25 @@
+error.tar.gz
+* Rename cui.h to cui_base.h
+* Rename cui.cpp to cui_base.cpp
+* Add file: cui.h, cui.cpp
+* Add summary from console output
+* Command to run program
+* Redirect Verifier's output
+
+BOI 2008? sound.in*
+
+Add a new problem which has no test point data,
+adding points failed. Now offer the test data,
+add points again, assert failed.
+
+*jiao1hu4shi4 (noi 2004):
+*  setrlimit: nofile
+*  extra files
+* sj no output
+
+Report errors together, for example,
+with -R, users easily sees report, ignoring system errors.
+
+
+If a filed is modified in test point info frame, the directly click
+quit, changes should have been saved.
