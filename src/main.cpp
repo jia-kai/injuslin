@@ -1,7 +1,7 @@
 /*
  * $File: main.cpp
  * $Author: Jiakai <jia.kai66@gmail.com>
- * $Date: Sat Oct 03 12:34:02 2009
+ * $Date: Wed Dec 26 19:02:52 2012 +0800
  */
 /*
 Copyright (C) (2008, 2009) (jiakai) <jia.kai66@gmail.com>
@@ -146,7 +146,7 @@ int main(int argc, char *argv[])
 			fprintf(stderr, "%s\n", _("Try -h option for more information."));
 			exit(EXIT_FAILURE);
 		}
-		if (!(setegid(getuid()) == 0 && seteuid(getuid()) == 0))
+		if (!(setegid(getgid()) == 0 && seteuid(getuid()) == 0))
 			REPORT_ERROR("setuid, setgid()");
 		init_work_dir(conf_path);
 		if (mode & MODE_QUIET_JUDGE)
